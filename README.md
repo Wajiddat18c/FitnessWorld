@@ -1,4 +1,4 @@
-+-----------------------------------------------------------------------+
+
 | Fitness Repetition Exercise                                           |
 |                                                                       |
 | In this exercise you are going to make a program that can show lists  |
@@ -69,4 +69,3 @@
 | members.txt                                                           |
 |                                                                       |
 | *© kea, clbo 26-08-2019*                                              |
-+-----------------------------------------------------------------------+
