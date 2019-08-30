@@ -1,1 +1,1 @@
-![Alt text](FitnessWorld\img.npg?raw=true "img1")
+![img1](images/img1.jpg)
