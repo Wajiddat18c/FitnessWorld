@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8acf56f3-5979-4f17-8930-dc2e91f1d79d" name="Default Changelist" comment="" />
+    <list default="true" id="1ad06c6e-ea74-42aa-aa22-88689dbde3f3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +15,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1Q6VNHd3hKVb29WK54uQMAlNgbI" />
+  <component name="ProjectId" id="1Q8VWjPZ0txHYWqQND2wKZ0yIj2" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,17 +33,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FitnessWorld">
-    <configuration name="FitnessWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FitnessWorld" />
-      <module name="Fitness" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Fitness" />
+      <module name="FitnessWorld" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -50,13 +44,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.FitnessWorld" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FitnessWorld" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -66,12 +55,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8acf56f3-5979-4f17-8930-dc2e91f1d79d" name="Default Changelist" comment="" />
-      <created>1567090990658</created>
+      <changelist id="1ad06c6e-ea74-42aa-aa22-88689dbde3f3" name="Default Changelist" comment="" />
+      <created>1567152243458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567090990658</updated>
-      <workItem from="1567090995025" duration="8577000" />
+      <updated>1567152243458</updated>
+      <workItem from="1567152249978" duration="8090000" />
+      <workItem from="1567162531194" duration="3755000" />
+      <workItem from="1567166443467" duration="235000" />
+      <workItem from="1567176717775" duration="1585000" />
     </task>
     <servers />
   </component>
