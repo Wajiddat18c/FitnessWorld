@@ -5,56 +5,66 @@ public class Main {
 
 
     public static void main(String[] args) {
+        List<Member> people = new ArrayList<>();
+        people.add(new Member("Ali", "090689-5010", false));
+        people.add(new Member("Wajid", "218450-2349", true));
+        people.add(new Member("jarl", "345678-1234", true));
+        people.add(new Member("Alex", "871023-9999", false));
+        people.add(new Member("Jonas", "741023-6541", true));
 
-        printNameAndCpr();
-        fitnessMembers();
-        printEmployee();
+
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(new Instructor("Kim", "050649-8520", 120));
+        employeeList.add(new Administration("Bi", "784325-2015", 2));
+        employeeList.add(new Instructor("Bo", "648720-0022", 10));
+        employeeList.add(new Administration("John", "367405-4564", 5));
+
+
+
+        printNameAndCpr((ArrayList<Member>) people, (ArrayList<Employee>) employeeList);
+        fitnessMembers((ArrayList<Member>) people);
+        printEmployee((ArrayList<Employee>) employeeList);
 
     }
 
-    public static void printNameAndCpr() {
-        List<Person> people = new ArrayList<>();
-        people.add(new Person("Ali", "090689-5010"));
-        people.add(new Person("Wajid", "218450-2349"));
-        people.add(new Person("Jarl", "055039-3410"));
-        people.add(new Person("Alex", "349512-5964"));
+    public static void printNameAndCpr(ArrayList<Member>people, ArrayList<Employee>employeeList) {
+
+
         System.out.println("Members Navn And Cpr");
         System.out.printf("%-15s%-12s\n", "Navn", "Cpr");
         start();
-        for (Person p :
+        for (Member p :
                 people) {
-            System.out.printf("%-15s%-12s\n", p.getNavn(), p.getCpr());
+
+                System.out.printf("%-15s%-12s\n", p.getNavn(), p.getCpr());
+        }
+        for (Employee e:
+             employeeList) {
+            System.out.printf("%-15s%-12s\n", e.getNavn(), e.getCpr());
+
         }
         end();
     }
 
-    public static void fitnessMembers() {
-        List<Member> member = new ArrayList<>();
-        member.add(new Member("Ali", "090689-5010", false));
-        member.add(new Member("Wajid", "218450-2349", true));
-        member.add(new Member("Alex", "6454", false));
+    public static void fitnessMembers(ArrayList<Member>people) {
+
         System.out.println("Fitness Members");
         System.out.printf("%-15s%-12s%-12s%-12s\n", "Navn", "Cpr", "Member type", "Fee");
         start();
         for (Member m :
-                member) {
+                people) {
             System.out.printf("%-15s%-12s%-12s%-12s\n", m.getNavn(), m.getCpr(), m.getMemberType(), m.monthlyFee());
 
         }
         end();
     }
 
-    public static void printEmployee() {
-        List<Employee> employees = new ArrayList<>();
-        employees.add(new Instructor("Kim", "050649-8520", 120));
-        employees.add(new Administration("Bi", "784325-2015", 2));
-        employees.add(new Instructor("Bo", "648720-0022", 10));
-        employees.add(new Administration("John", "367405-4564", 5));
+    public static void printEmployee(ArrayList<Employee>employeeList) {
         System.out.println("Fitness Employees");
         System.out.printf("%-15s%-12s%-12s%-12s%-12s\n", "Navn", "Cpr", "Hours", "Salary", "Vacation");
         start();
         for (Employee e :
-                employees) {
+                employeeList) {
 
             if (e instanceof Administration) {
                 System.out.printf("%-15s%-12s%-12s%-12s%-12s\n", e.getNavn(), e.getCpr(), e.getHours(), e.getSalary(), ((Administration) e).getVacation());

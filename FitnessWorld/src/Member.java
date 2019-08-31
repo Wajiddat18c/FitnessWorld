@@ -7,6 +7,10 @@ public class Member extends Person {
         this.isBasic = isBasic;
     }
 
+    public Member(String navn, String cpr) {
+        super(navn, cpr);
+    }
+
     public void full() {
 
         isBasic = false;
