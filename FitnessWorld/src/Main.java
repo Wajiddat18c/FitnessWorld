@@ -28,13 +28,13 @@ public class Main {
     }
 
     public static void fitnessMembers() {
-        List<Menber> member = new ArrayList<>();
-        member.add(new Menber("Ali", "090689-5010", false));
-        member.add(new Menber("Wajid", "218450-2349", true));
-        member.add(new Menber("Alex", "6454", false));
+        List<Member> member = new ArrayList<>();
+        member.add(new Member("Ali", "090689-5010", false));
+        member.add(new Member("Wajid", "218450-2349", true));
+        member.add(new Member("Alex", "6454", false));
         System.out.printf("%-15s%-12s%-12s%-12s\n", "Navn", "Cpr", "Member type", "Fee");
         start();
-        for (Menber m :
+        for (Member m :
                 member) {
             System.out.printf("%-15s%-12s%-12s%-12s\n", m.getNavn(), m.getCpr(), m.getMemberType(), m.monthlyFee());
 

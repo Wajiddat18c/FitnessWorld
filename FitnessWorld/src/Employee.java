@@ -1,5 +1,5 @@
 public class Employee extends Person {
-    int hours;
+    int hours = 37;
     private int salary = 23000;
 
     public Employee(String navn, String cpr) {
