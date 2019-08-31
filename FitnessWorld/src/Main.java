@@ -18,6 +18,7 @@ public class Main {
         people.add(new Person("Wajid", "218450-2349"));
         people.add(new Person("Jarl", "055039-3410"));
         people.add(new Person("Alex", "349512-5964"));
+        System.out.println("Members Navn And Cpr");
         System.out.printf("%-15s%-12s\n", "Navn", "Cpr");
         start();
         for (Person p :
@@ -32,6 +33,7 @@ public class Main {
         member.add(new Member("Ali", "090689-5010", false));
         member.add(new Member("Wajid", "218450-2349", true));
         member.add(new Member("Alex", "6454", false));
+        System.out.println("Fitness Members");
         System.out.printf("%-15s%-12s%-12s%-12s\n", "Navn", "Cpr", "Member type", "Fee");
         start();
         for (Member m :
@@ -48,6 +50,7 @@ public class Main {
         employees.add(new Administration("Bi", "784325-2015", 2));
         employees.add(new Instructor("Bo", "648720-0022", 10));
         employees.add(new Administration("John", "367405-4564", 5));
+        System.out.println("Fitness Employees");
         System.out.printf("%-15s%-12s%-12s%-12s%-12s\n", "Navn", "Cpr", "Hours", "Salary", "Vacation");
         start();
         for (Employee e :
