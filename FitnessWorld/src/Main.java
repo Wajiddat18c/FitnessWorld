@@ -31,7 +31,7 @@ public class Main {
     public static void printNameAndCpr(ArrayList<Member> people, ArrayList<Employee> employeeList) {
 
 
-        System.out.println("Members Navn And Cpr");
+        System.out.println("Members & Empoloyess Navn / Cpr");
         System.out.printf("%-15s%-12s\n", "Navn", "Cpr");
         start();
         for (Member p :
