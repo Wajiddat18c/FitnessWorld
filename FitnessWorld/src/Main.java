@@ -1,10 +1,16 @@
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+
+        FileHandling filNavne = new FileHandling();
+        //TODO Spilt filPrint.
+//        filNavne.filPrint();
+
         List<Member> people = new ArrayList<>();
         List<Employee> employeeList = new ArrayList<>();
 
