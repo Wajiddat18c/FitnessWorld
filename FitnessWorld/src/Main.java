@@ -1,15 +1,21 @@
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
 
     public static void main(String[] args) throws FileNotFoundException {
+        FileHandling filNavne = new FileHandling();
 
         List<Member> people = new ArrayList<>();
         List<Employee> employeeList = new ArrayList<>();
+        filNavne.filPrint();
 
+        people.add(new Member(filNavne.getSpited()[0], filNavne.getSpited()[1]));
+        people.add(new Member(filNavne.getSpited()[2], filNavne.getSpited()[3]));
+        people.add(new Member(filNavne.getSpited()[4], filNavne.getSpited()[5]));
 
         people.add(new Member("Ali", "090689-5010", false));
         people.add(new Member("Wajid", "218450-2349", true));
@@ -27,9 +33,11 @@ public class Main {
         fitnessMembers((ArrayList<Member>) people);
         printEmployee((ArrayList<Employee>) employeeList);
 
-        FileHandling filNavne = new FileHandling();
+
+//        people.add(new Member(filNavne.spited[0].toString(), filNavne.spited[1].toString()));
         //TODO Spilt filPrint.
-        filNavne.filPrint();
+
+
 
     }
 
