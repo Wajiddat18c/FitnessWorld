@@ -7,10 +7,6 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        FileHandling filNavne = new FileHandling();
-        //TODO Spilt filPrint.
-//        filNavne.filPrint();
-
         List<Member> people = new ArrayList<>();
         List<Employee> employeeList = new ArrayList<>();
 
@@ -30,6 +26,10 @@ public class Main {
         printNameAndCpr((ArrayList<Member>) people, (ArrayList<Employee>) employeeList);
         fitnessMembers((ArrayList<Member>) people);
         printEmployee((ArrayList<Employee>) employeeList);
+
+        FileHandling filNavne = new FileHandling();
+        //TODO Spilt filPrint.
+        filNavne.filPrint();
 
     }
 

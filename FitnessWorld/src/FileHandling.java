@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FileHandling {
 
     public void filPrint() throws FileNotFoundException {
-        Scanner s = new Scanner(new File("FitnessWorld/navneliste/persons.txt"));
+        Scanner s = new Scanner(new File("navneliste/persons.txt"));
         ArrayList<String> list = new ArrayList<String>();
         while (s.hasNextLine()){
             list.add(s.nextLine());
